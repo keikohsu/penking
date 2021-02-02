@@ -42,21 +42,21 @@
       </v-container>
       <div class="toolbarbackground" elevation="12">
         <v-container class="d-flex align-self-center hidden-xs side-column">
-          <v-row elevation="10" class="nav justify-center toolbar align-center ">
+          <v-row elevation="10" class="nav justify-center toolbar align-center flex-row">
             <!-- active-class="deep-orange darken-4--text" -->
-            <v-col cols="12" sm="2" class="pa-0 ma-0">
+            <v-col cols="2" sm="2" class="pa-0 ma-0">
               <router-link class="nav nav-menu d-flex justify-center  ma-2" to="/">
                 <v-btn text block large class="textcolor " style="color:#657b6c">首頁</v-btn>
               </router-link>
             </v-col>
-            <v-col cols="12" sm="2">
+            <v-col cols="2" sm="2">
               <v-menu offset-y rounded min-width="160px" light>
                 <template v-slot:activator="{ on, attrs }">
                   <li class="nav nav-menu d-flex justify-center align-center">
-                    <v-btn text block large v-bind="attrs" v-on="on" class="textcolor" style="color:#657b6c">產品</v-btn>
+                    <v-btn text block large v-bind="attrs" v-on="on" style="color:#657b6c">產品</v-btn>
                   </li>
                 </template>
-                <v-list class="">
+                <v-list >
                   <v-list-item>
                     <router-link class="nav nav-menu" to="/product/all"><btn>全部產品</btn></router-link>
                   </v-list-item>
@@ -90,14 +90,14 @@
                 </v-list>
               </v-menu>
             </v-col>
-            <v-col cols="12" sm="2" class="d-flex justify-center align-center">
+            <v-col cols="2" sm="2" class="d-flex justify-center align-center">
               <v-menu offset-y rounded min-width="160px" light>
                 <template v-slot:activator="{ on, attrs }">
                   <li class="nav nav-menu d-flex justify-center align-center">
                     <v-btn text block large v-bind="attrs" v-on="on" style="color:#657b6c">獨特產品</v-btn>
                   </li>
                 </template>
-                <v-list class="">
+                <v-list>
                   <v-list-item>
                     <router-link class="nav nav-menu" to="/product/all"><btn style="color:#657b6c">全部產品</btn></router-link>
                   </v-list-item>
@@ -118,7 +118,7 @@
                 <v-btn text block large class="textcolor">文具</v-btn>
               </router-link>
             </v-col> -->
-            <v-col cols="12" sm="2" class="d-flex justify-center align-center">
+            <v-col cols="2" sm="2" class="d-flex justify-center align-center">
               <router-link class="nav nav-menu" to="/Connection">
                 <v-btn text block large class="d-flex justify-center" style="color:#657b6c">聯絡我們</v-btn>
               </router-link>
@@ -278,7 +278,4 @@ export default {
   background: #f6f4e8;
   height: 55px;
 }
-/* .textcolor:active {
-background: azure;
-} */
 </style>

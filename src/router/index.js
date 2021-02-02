@@ -170,6 +170,7 @@ router.afterEach((to, from) => {
   }
 
   document.title = title
+  document.documentElement.scrollTop = 0
 })
 
 export default router
