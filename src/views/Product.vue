@@ -64,10 +64,6 @@
           <!-- <v-col cols="12" md="1" style="background:blue"></v-col> -->
         </v-row>
       </v-container>
-      <!-- 頁數 -->
-      <div class="text-center">
-        <v-pagination v-model="page" :length="4" circle></v-pagination>
-      </div>
 
       <!-- 按鈕 -->
       <v-row justify="end" class="btn">
