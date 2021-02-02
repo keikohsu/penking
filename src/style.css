@@ -1,0 +1,112 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+.pd{
+  padding:0;
+}
+
+/* 刪除底線 */
+.navnoline{
+	text-decoration:none;
+}
+p {
+color: #657b6c;
+}
+
+/* container 間距 */
+@media (min-width: 576px) {
+  .container, .container-sm {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container, .container-sm, .container-md {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container, .container-sm, .container-md, .container-lg {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container, .container-sm, .container-md, .container-lg, .container-xl {
+    max-width: 1200px;
+    /* max-width: 1140px; */
+  }
+}
+/*------------------------------------------------------------------
+  Header
+-----------------------------------------------------------------*/
+
+.hs-nav .nav-menu ul li a:after {
+  position: absolute;
+  left: 0;
+  top: 42px;
+  width: 100%;
+  height: 2px;
+  background: #00C89E;
+  content: "";
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+
+
+/* Back----------------------------------------------------------------- */
+
+.FormPadding{
+padding-left: 260px;
+  align-items: center;
+  width: 100%;
+  padding-top:150px;
+}
+.FormPadding-users{
+  padding-left: 420px;
+  width: 100%;
+  padding-top:150px;
+}
+
+
+/* 改背景RRRR */
+#inspire{
+  /* background: #f0f1ec; */
+  background: #F4F2E8;
+  
+}
+/* 顏色主要色紫系  字 #9575CD     NaV #C0A9BD*/
+/* 藍   #00303F 深藍
+#BACEC1 淺藍
+#657b6c 深藍
+#EDBD38 黃 #f4c865
+*/
+
+/* login sign */
+.field-text-white {
+  color: #657b6c;
+}
+.field-btn{
+  background:#f4c865 ;
+  color: white;
+}
