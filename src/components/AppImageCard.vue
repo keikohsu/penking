@@ -1,7 +1,7 @@
 <template>
-  <v-container>
+  <v-container  class="d-flex justify-center pl-12">
     <!-- <p class="text-center pt-10">最新商品</p> -->
-    <v-row class="d-flex justify-space-around pr-4 py-15 mt-1 justify-center">
+    <v-row class="justify-space-around py-15 mt-1">
       <v-col data-aos="zoom-in" data-aos-delay="300" sm="2">
         <v-img class="images1" :src="'./images/speech-bubble.png'" aspect-ratio="1" cols="3" sm="1"></v-img>
         <v-row

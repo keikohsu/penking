@@ -5,8 +5,8 @@
       <v-divider></v-divider>
     </v-col>
     <v-row>
-      <v-col cols="12" sm="3" class="cardpadding " v-for="card in cards" :key="card.id">
-        <v-card class="" max-width="400" min-height="400">
+      <v-col cols="12" sm="3" class="cardpadding pl-sm-0 pl-12" v-for="card in cards" :key="card.id">
+        <v-card max-width="400" min-height="400">
           <router-link :to="card.id">
             <v-img class="white--text align-end" height="200px" style="width:100%; height: 100%" :src="card.src"> </v-img>
           </router-link>
@@ -68,16 +68,16 @@ export default {
           src: './images/拉紙筆.jpg',
           id: '/Productpag1019',
           title: 'TOP 5 熱門商品',
-          rating: 4.5,
-          value: 4.5,
+          rating: 4,
+          value: 4,
           content: ' 廣告拉紙筆雙面彩色印刷，廣告面積大可以把您想要呈現的內容都表達出來。'
         },
         {
           src: './images/unnamed.jpg',
           id: '/Productpag1014',
           title: 'TOP 6 熱門商品',
-          rating: 4.5,
-          value: 4.5,
+          rating: 5,
+          value: 5,
           content: '環保愛地球 本產品使用再生用紙，可以應刷商品字樣。'
         },
         {
@@ -92,8 +92,8 @@ export default {
           src: './images/圓筒色鉛筆.jpg',
           id: '/Productpag1002',
           title: 'TOP 8 熱門商品',
-          rating: 4.5,
-          value: 4.5,
+          rating: 5,
+          value: 5,
           content: '色彩鮮明艷麗，不易褪色。 筆觸流暢且容易混色，描繪陰影、光暈效果佳。'
         }
       ]
