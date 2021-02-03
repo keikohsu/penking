@@ -12,6 +12,7 @@ import ImgInputer from 'vue-img-inputer'
 import 'vue-img-inputer/dist/index.css'
 import Photoswipe from 'vue-pswipe'
 import VueSlickCarousel from 'vue-slick-carousel'
+import googleGA from 'vue-gtag'
 
 import AOS from 'aos'
 import 'aos/dist/aos.css'
@@ -27,6 +28,12 @@ Vue.use(Photoswipe)
 Vue.use(VueSlickCarousel)
 
 Vue.component('ImgInputer', ImgInputer)
+
+Vue.use(googleGA, {
+  config: {
+    id: process.env.VUE_APP_GA
+  }
+})
 
 new Vue({
   created() {
