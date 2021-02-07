@@ -93,7 +93,7 @@ padding-left: 260px;
 #inspire{
   /* background: #f0f1ec; */
   background: #F4F2E8;
-  
+  overflow-x: hidden;
 }
 /* 顏色主要色紫系  字 #9575CD     NaV #C0A9BD*/
 /* 藍   #00303F 深藍

@@ -2,11 +2,11 @@
   <v-container>
     <!-- <p class="text-center pt-10">最新商品</p> -->
     <v-row class="d-flex background-card align-center">
-      <v-col cols="12" lg="3" id="product_1" class="pa-8 pt-0">
+      <v-col cols="12" lg="3" id="product_1" class="pa-8 pt-lg-0 pt-sm-0 ">
         <p>近期瀏覽商品</p>
         <v-divider></v-divider>
         <v-col cols="7" sm="4" lg="12" class="d-flex flex-column-reverse">
-          <v-card elevation="0" class="browse pa-3 ma-0" v-for="item in itemslook" :key="item.id">
+          <v-card elevation="0" class="browse pa-3 ma-0" v-for="item in itemslook" :key="item.id" v-bind:to="item.router">
             <v-img class="pr-1" :src="item.src"></v-img>
             <p class="d-flex justify-center pl-5 align-center">{{ item.title }}</p>
           </v-card>
@@ -15,30 +15,25 @@
         <p class="pt-10">特價商品</p>
         <v-divider></v-divider>
         <v-col cols="7" sm="4" lg="12" class="d-flex flex-column-reverse">
-          <v-card elevation="0" class="browse pa-3 ma-0" v-for="item in itemsSale" :key="item.id" v-bind:to="item.router">
+          <v-card  elevation="0" class="browse pa-3 ma-0" v-for="item in itemsSale" :key="item.id" v-bind:to="item.router">
             <v-img class="pr-1" :src="item.src"></v-img>
             <div>
-              <p class="d-flex justify-center pl-5">{{ item.title }}</p>
-              <span class="d-flex pr-7 pl-2 align-center justify-space-around">
-                <span class="priceline pl-7 pr-3">{{ item.sale }}</span
-                >{{ item.price }}</span
-              >
+              <p class="d-flex justify-center pl-5 ">{{ item.title }} </p>
+              <span class="d-flex pr-7 pl-2 align-center justify-space-around"> <span class="priceline pl-7 pr-3">{{ item.sale }}</span>{{ item.price }}</span>
             </div>
           </v-card>
         </v-col>
       </v-col>
       <v-col md="9" sm="3" class="pa-10" style="min-width: 350px;">
-        <v-col>
           <p class="">推薦商品</p>
           <v-divider></v-divider>
           <v-col cols="12" sm="5" lg="4"  class="d-flex flex-sm-row m-0 m-3  flex-column-reverse">
-            <v-card v-for="item in items" :key="item.id" class="pa-3 ma-3">
+            <v-card cols="12" lg="4" v-for="item in items" :key="item.id" class="pa-3 ma-3">
               <v-img class="p-10" :src="item.src"></v-img>
               <p>{{ item.title }}</p>
               <v-btn elevation="0" rounded small color="#f4c865" class="white--text" v-bind:to="item.router">more</v-btn>
             </v-card>
           </v-col>
-        </v-col>
         <v-col>
           <p>最新商品</p>
           <v-divider></v-divider>
@@ -107,17 +102,20 @@ export default {
         {
           src: './images/unnamed.jpg',
           id: '1',
-          title: '環保紙管原子筆'
+          title: '環保紙管原子筆',
+          router: '/Productpag1014'
         },
         {
           src: './images/top1.jpg',
           id: '3',
-          title: '水晶筆 筆王(淡香）'
+          title: '水晶筆 筆王(淡香）',
+          router: '/Productpag1160'
         },
         {
           src: './images/20190406143016.jpg',
           id: '3',
-          title: '高級皮革鋼珠筆'
+          title: '高級皮革鋼珠筆',
+          router: '/Productpag1012'
         }
       ],
       // 特價商品

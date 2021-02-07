@@ -24,7 +24,7 @@
 
             <!-- 小圖 -->
             <v-card class="small-imag-row small-img">
-              <div class="small-imag-col d-flex flex-row pr-5 pl-4 justify-space-between">
+              <div class="small-imag-col d-flex flex-row justify-space-between">
                 <img v-for="(image, index) in images" :key="image" :src="image" width="90" height="80" @click="change(index)" />
               </div>
               <!-- <div class="small-imag-col">
@@ -42,53 +42,53 @@
         </v-col>
         <!-- 右邊資訊 -->
         <v-col cols="12" md="5" class="py">
-          <v-row justify="center">
-            <v-row>
-              <v-col cols="12" md="2" sm="1" class="px-5 ">
+          <v-row justify="center pl-5">
+            <v-row class="pl-0 pl-sm-5">
+              <v-col cols="2" md="2" sm="1" class="px-5 ">
                 <v-avatar color="#f4c865">
                   <v-icon dark>
                     mdi-robot
                   </v-icon>
                 </v-avatar>
               </v-col>
-              <v-col cols="12" md="10">
+              <v-col cols="10" md="10">
                 <p>抽獎活動 <br />站內購物滿三千元，即可參加每月抽獎活動！</p>
               </v-col>
             </v-row>
             <v-col cols="12"><v-divider></v-divider></v-col>
-            <v-row>
-              <v-col cols="12" md="2" sm="5" class="px-5">
+            <v-row class="pl-0 pl-sm-5">
+              <v-col cols="2" md="2" sm="1" class="px-5">
                 <v-avatar color="#f4c865">
                   <v-icon dark>
                     mdi-dump-truck
                   </v-icon>
                 </v-avatar>
               </v-col>
-              <v-col cols="12" md="10">
+              <v-col cols="10" md="10">
                 <p>免運活動 <br />站內購物滿499元，即可享有免運費!</p>
               </v-col>
             </v-row>
             <v-col cols="12"><v-divider></v-divider></v-col>
-            <v-col cols="12" class="textcolor text-subtitle-2">
+            <v-col cols="12" class="textcolor text-subtitle-2 pl-8">
               類別: {{ productdata.sort }}<br />
               商品型號: {{ productdata.number }}<br />
               庫存量: {{ productdata.amount }}
             </v-col>
             <v-col cols="12"><v-divider></v-divider></v-col>
             <v-col
-              ><p class="mb-2 text-h4">${{ productdata.price }}</p></v-col
+              ><p class="mb-2 text-h4 pl-5">${{ productdata.price }}</p></v-col
             >
             <v-col cols="12"><v-divider></v-divider></v-col>
-            <v-row class="pl-8 pt-5">
+            <v-row class="pl-sm-8 pl-0 pt-5 d-flex justify-space-around">
               <!-- <v-col sm="6" md="2"><p class="pt-3">數量</p></v-col> -->
-              <v-col cols="12" sm="6" md="4" class="d-flex flex-row pl-5 align-center">
+              <v-col cols="12" sm="6" md="4" class="d-flex flex-row align-center justify-center pl-0 pl-sm-10">
                 <v-btn color="#f4c865" elevation="2" fab x-small text tile><v-icon color="white" @click="decreaseOtn()">mdi-minus</v-icon> </v-btn>
                 <p class="pl-8 pr-8 pt-4 d-flex">{{ quantity }}</p>
                 <!-- <v-text-field label="數量" solo dense></v-text-field> -->
                 <v-btn class="d-flex align-center" color="#f4c865" elevation="2" fab x-small text tile
                   ><v-icon color="white" @click="increaseOtn()">mdi-plus</v-icon></v-btn
                 >
-                <v-col cols="12" class="d-flex pl-10">
+                <v-col cols="12" sm="6" md="4" class="d-flex justify-center pl-0 pr-sm-10 pt-4">
                   <v-btn class="ma-2  cart-btn" outlined color="#657b6c" @click="addToBasket(productdata)">
                     加入購物車
                   </v-btn>

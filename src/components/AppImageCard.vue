@@ -3,16 +3,20 @@
     <!-- <p class="text-center pt-10">最新商品</p> -->
     <v-row class="justify-space-around py-15 mt-1">
       <v-col data-aos="zoom-in" data-aos-delay="300" sm="2">
+        <router-link to="/Connection" class="navnoline">
         <v-img class="images1" :src="'./images/speech-bubble.png'" aspect-ratio="1" cols="3" sm="1"></v-img>
         <v-row
-          ><v-col class="text-center" cols="12"><p class="pr-8 pt-2">Q&A</p></v-col></v-row
+          ><v-col class="text-center" cols="12"><p class="pr-8 pt-2">回饋Q&A</p></v-col></v-row
         >
+        </router-link>
       </v-col>
       <v-col data-aos="zoom-in" data-aos-delay="300" sm="2">
+        <router-link to="/DescriptionBuy" class="navnoline">
         <v-img class="images1" :src="'./images/shopping-bag.png'" aspect-ratio="1" cols="3" sm="1"></v-img>
         <v-row
           ><v-col class="text-center" cols="12"><p class="pr-9 pt-2">購物須知</p></v-col></v-row
         >
+        </router-link>
       </v-col>
       <v-col data-aos="zoom-in" data-aos-delay="300" sm="2">
         <router-link to="/About" class="navnoline">

@@ -58,34 +58,34 @@
                 </template>
                 <v-list >
                   <v-list-item>
-                    <router-link class="nav nav-menu" to="/product/all"><btn>全部產品</btn></router-link>
+                    <router-link class="nav nav-menu " to="/product/all"><btn style="color:#657b6c">全部產品</btn></router-link>
                   </v-list-item>
                   <v-list-item>
-                    <router-link class="nav nav-menu" to="/product/自動鉛筆"><btn>自動鉛筆</btn></router-link>
+                    <router-link class="nav nav-menu " to="/product/自動鉛筆"><btn style="color:#657b6c">自動鉛筆</btn></router-link>
                   </v-list-item>
                   <v-list-item>
-                    <router-link class="nav nav-menu" to="/product/鉛筆"><btn>鉛筆</btn></router-link>
+                    <router-link class="nav nav-menu" to="/product/鉛筆"><btn style="color:#657b6c">鉛筆</btn></router-link>
                   </v-list-item>
                   <v-list-item>
-                    <router-link class="nav nav-menu" to="/product/色鉛筆"><btn>色鉛筆</btn></router-link>
+                    <router-link class="nav nav-menu" to="/product/色鉛筆"><btn style="color:#657b6c">色鉛筆</btn></router-link>
                   </v-list-item>
                   <v-list-item>
-                    <router-link class="nav nav-menu" to="/product/鋼筆"><btn>鋼筆</btn></router-link>
+                    <router-link class="nav nav-menu" to="/product/鋼筆"><btn style="color:#657b6c">鋼筆</btn></router-link>
                   </v-list-item>
                   <v-list-item>
-                    <router-link class="nav nav-menu" to="/product/鋼珠筆"><btn>鋼珠筆</btn></router-link>
+                    <router-link class="nav nav-menu" to="/product/鋼珠筆"><btn style="color:#657b6c">鋼珠筆</btn></router-link>
                   </v-list-item>
                   <v-list-item>
-                    <router-link class="nav nav-menu" to="/product/塑膠筆"><btn>塑膠筆</btn></router-link>
+                    <router-link class="nav nav-menu" to="/product/塑膠筆"><btn style="color:#657b6c">塑膠筆</btn></router-link>
                   </v-list-item>
                   <v-list-item>
-                    <router-link class="nav nav-menu" to="/product/多用筆"><btn>多用筆</btn></router-link>
+                    <router-link class="nav nav-menu" to="/product/多用筆"><btn style="color:#657b6c">多用筆</btn></router-link>
                   </v-list-item>
                   <v-list-item>
-                    <router-link class="nav nav-menu" to="/product/沾水筆"><btn>沾水筆</btn></router-link>
+                    <router-link class="nav nav-menu" to="/product/沾水筆"><btn style="color:#657b6c">沾水筆</btn></router-link>
                   </v-list-item>
                   <v-list-item>
-                    <router-link class="nav nav-menu" to="/product/原子筆"><btn>原子筆</btn></router-link>
+                    <router-link class="nav nav-menu" to="/product/原子筆"><btn style="color:#657b6c">原子筆</btn></router-link>
                   </v-list-item>
                 </v-list>
               </v-menu>
@@ -94,7 +94,7 @@
               <v-menu offset-y rounded min-width="160px" light>
                 <template v-slot:activator="{ on, attrs }">
                   <li class="nav nav-menu d-flex justify-center align-center">
-                    <v-btn text block large v-bind="attrs" v-on="on" style="color:#657b6c">獨特產品</v-btn>
+                    <v-btn text block large v-bind="attrs" v-on="on"  style="color:#657b6c">獨特產品</v-btn>
                   </li>
                 </template>
                 <v-list>
@@ -102,13 +102,13 @@
                     <router-link class="nav nav-menu" to="/product/all"><btn style="color:#657b6c">全部產品</btn></router-link>
                   </v-list-item>
                   <v-list-item>
-                    <router-link class="nav nav-menu" to="/product/獨特類"><btn>獨特類</btn></router-link>
+                    <router-link class="nav nav-menu" to="/product/獨特類"><btn style="color:#657b6c">獨特類</btn></router-link>
                   </v-list-item>
                   <v-list-item>
-                    <router-link class="nav nav-menu" to="/product/水晶筆"><btn>水晶筆</btn></router-link>
+                    <router-link class="nav nav-menu" to="/product/水晶筆"><btn style="color:#657b6c">水晶筆</btn></router-link>
                   </v-list-item>
                   <v-list-item>
-                    <router-link class="nav nav-menu" to="/product/漂浮筆"><btn>入油筆/漂浮筆</btn></router-link>
+                    <router-link class="nav nav-menu" to="/product/漂浮筆"><btn style="color:#657b6c">入油筆/漂浮筆</btn></router-link>
                   </v-list-item>
                 </v-list>
               </v-menu>

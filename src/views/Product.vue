@@ -35,15 +35,15 @@
               </v-hover>
 
               <v-card-actions>
-                <v-row class="d-flex justify-center align-center pb-1 pl-15 pl-lg-0 pl-sm-0">
-                  <v-col class="pb-0 pt-2" cols="12" sm="12"><p class="text-center text-subtitle-1" v-text="card.name"></p></v-col>
+                <v-row class="d-flex justify-center align-center pb-1 pl-lg-0 pl-0 pl-sm-7">
+                  <v-col class="pb-0 pt-2 d-flex justify-center " cols="12"  sm="12"><p class="text-subtitle-1" v-text="card.name"></p></v-col>
 
                   <!-- <v-col class=" pb-12 pt-0 pr-0 pl-12">
                     <v-btn large icon @click="addToBasket(card), messages++"> </v-btn>
                   </v-col> -->
-                  <v-row class="pt-0 pb-2 ">
-                    <v-col cols="12" class="d-flex justify-center pt-0"
-                      ><v-btn class="ma-2" outlined color="#BACEC1" @click="addToBasket(card), messages++"
+                  <v-row class="pb-2">
+                    <v-col cols="12" class="pt-0 d-flex justify-center"
+                      ><v-btn class="ma-2 d-flex justify-center" outlined color="#BACEC1" @click="addToBasket(card), messages++"
                         ><v-icon color="#f4c865">mdi-cart</v-icon>加入購物車
                       </v-btn></v-col
                     >
@@ -313,7 +313,7 @@ export default {
 
 .btn {
   position: fixed;
-  top: 92%;
+  top: 90%;
   right: 20px;
 }
 </style>

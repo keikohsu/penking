@@ -122,7 +122,10 @@ const routes = [
   {
     path: '/Check',
     name: 'Check',
-    component: () => import(/* webpackChunkName: "Check" */ '../views/Check.vue')
+    component: () => import(/* webpackChunkName: "Check" */ '../views/Check.vue'),
+    meta: {
+      title: '筆王|購物車'
+    }
   },
   {
     path: '/CheckiList',
@@ -140,13 +143,19 @@ const routes = [
   {
     path: '/Connection',
     name: 'Connection',
-    component: () => import(/* webpackChunkName: "Connection" */ '../components/connection.vue')
+    component: () => import(/* webpackChunkName: "Connection" */ '../components/connection.vue'),
+    meta: {
+      title: '筆王|表單'
+    }
   },
   {
-    path: '/Apprecommend',
-    name: 'Apprecommend',
-    component: () => import(/* webpackChunkName: "Apprecommend" */ '../components/Apprecommend.vue')
-  },
+    path: '/DescriptionBuy',
+    name: 'DescriptionBuy',
+    component: () => import(/* webpackChunkName: "DescriptionBuy" */ '../components/DescriptionBuy.vue'),
+    meta: {
+      title: '筆王|購物須知'
+    }
+  }
 ]
 
 const router = new VueRouter({
