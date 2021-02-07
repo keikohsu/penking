@@ -6,19 +6,25 @@
           <v-col cols="6" sm="3">
             <p class="position-title footer-color-text">服務</p>
             <router-link to="/product/all" class="navnoline">
-              <p class="position footer-color-text"><v-icon class="position-icons" color="#f7f3e1">mdi-pencil-outline</v-icon>產品</p>
+            <p class="position footer-color-text"><v-icon class="position-icons" color="#f7f3e1">mdi-pencil-outline</v-icon>產品</p>
             </router-link>
+            <router-link to="/DescriptionBuy" class="navnoline">
             <p class="position footer-color-text"><v-icon class="position-icons" color="#f7f3e1">mdi-tray-full</v-icon> 印刷</p>
             <p class="position footer-color-text"><v-icon class="position-icons" color="#f7f3e1">mdi-gift-outline</v-icon>禮品包裝</p>
             <p class="position footer-color-text"><v-icon class="position-icons" color="#f7f3e1">mdi-truck-outline</v-icon>運送與送貨</p>
+            </router-link>
           </v-col>
           <v-col cols="6" sm="3">
             <p class="position-title footer-color-text">支援</p>
             <router-link to="/Connection" class="navnoline">
-              <p class="position footer-color-text"><v-icon class="position-icons" color="#f7f3e1">mdi-account</v-icon>聯絡我們</p>
+            <p class="position footer-color-text"><v-icon class="position-icons" color="#f7f3e1">mdi-account</v-icon>聯絡我們</p>
             </router-link>
+            <router-link to="/DescriptionBuy" class="navnoline">
             <p class="position footer-color-text"><v-icon class="position-icons" color="#f7f3e1">mdi-help-circle-outline</v-icon>相關問題</p>
+            </router-link>
+            <router-link to="/Connection" class="navnoline">
             <p class="position footer-color-text"><v-icon class="position-icons" color="#f7f3e1">mdi-message-processing-outline</v-icon>商品回饋</p>
+            </router-link>
           </v-col>
           <v-col cols="6" sm="4">
             <p class="position-title footer-color-text">關於筆王</p>
@@ -32,19 +38,21 @@
           <v-col cols="6" sm="2" class="">
             <p class="footer-color-text">信箱與社群</p>
             <v-card-text>
-              <a class="navnoline" href="mailto:penking@penking.com.tw">
+              <a class="navnoline " href="mailto:penking@penking.com.tw">
                 <v-btn color="#f7f3e1" class="mx-4 white--text" icon>
-                  <v-icon size="24px"> mdi-email </v-icon>
+                  <v-icon size="24px">
+                    mdi-email
+                  </v-icon>
                 </v-btn>
               </a>
               <a class="navnoline" href="https://www.facebook.com/%E7%AD%86%E7%8E%8B-102899565151073/?ref=page_internal">
                 <v-btn icon color="#f7f3e1"> <v-icon>mdi-facebook</v-icon> </v-btn>
               </a>
               <a class="navnoline" href="https://line.me/ti/p/CM1uefzuxM">
-                <v-btn icon color="#f7f3e1"><v-icon>mdi-chat-processing-outline</v-icon></v-btn>
+              <v-btn icon color="#f7f3e1"><v-icon>mdi-chat-processing-outline</v-icon></v-btn>
               </a>
             </v-card-text>
-          </v-col>
+            </v-col>
         </v-row>
       </v-container>
     </v-col>
