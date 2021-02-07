@@ -1,14 +1,16 @@
 <template>
   <v-container>
     <!-- <p class="text-center pt-10">最新商品</p> -->
-    <v-row class="d-flex background-card align-center">
+    <v-row class="d-flex background-card align-center pt-12">
       <v-col cols="12" lg="3" id="product_1" class="pa-8 pt-lg-0 pt-sm-0 ">
         <p>近期瀏覽商品</p>
         <v-divider></v-divider>
         <v-col cols="7" sm="4" lg="12" class="d-flex flex-column-reverse">
           <v-card elevation="0" class="browse pa-3 ma-0" v-for="item in itemslook" :key="item.id" v-bind:to="item.router">
             <v-img class="pr-1" :src="item.src"></v-img>
+            <v-col cols="12">
             <p class="d-flex justify-center pl-5 align-center">{{ item.title }}</p>
+            </v-col>
           </v-card>
         </v-col>
         <!-- <v-col cols="2"></v-col> -->
@@ -17,10 +19,10 @@
         <v-col cols="7" sm="4" lg="12" class="d-flex flex-column-reverse">
           <v-card  elevation="0" class="browse pa-3 ma-0" v-for="item in itemsSale" :key="item.id" v-bind:to="item.router">
             <v-img class="pr-1" :src="item.src"></v-img>
-            <div>
+            <v-col cols="12" sm="4" lg="12">
               <p class="d-flex justify-center pl-5 ">{{ item.title }} </p>
-              <span class="d-flex pr-7 pl-2 align-center justify-space-around"> <span class="priceline pl-7 pr-3">{{ item.sale }}</span>{{ item.price }}</span>
-            </div>
+              <v-col cols="12" class="d-flex pr-sm-7 pr-0 pl-sm-2 pl-0 align-center justify-space-around"> <span class="priceline pl-7 pr-3">{{ item.price }}</span>{{ item.sale }}</v-col>
+            </v-col>
           </v-card>
         </v-col>
       </v-col>

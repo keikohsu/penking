@@ -1,13 +1,13 @@
 <template>
   <v-container >
     <v-row >
-    <v-col cols="12">
+    <v-col cols="12 pt-10 pb-0">
       <p class=" text-h6">商品精選 TOP</p>
       <v-divider></v-divider>
     </v-col>
     <!-- 這裡改 -->
       <v-col cols="12" sm="3" class="cardpadding pl-sm-0 pl-3" v-for="card in cards" :key="card.id">
-        <v-card class="" max-width="400" min-height="400">
+        <v-card max-width="400" min-height="400">
           <router-link :to="card.id">
             <v-img class="white--text align-end" height="200px" style="width:100%; height: 100%" :src="card.src"> </v-img>
           </router-link>

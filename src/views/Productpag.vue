@@ -88,11 +88,11 @@
                 <v-btn class="d-flex align-center" color="#f4c865" elevation="2" fab x-small text tile
                   ><v-icon color="white" @click="increaseOtn()">mdi-plus</v-icon></v-btn
                 >
-                <v-col cols="12" sm="6" md="4" class="d-flex justify-center pl-0 pr-sm-10 pt-4">
-                  <v-btn class="ma-2  cart-btn" outlined color="#657b6c" @click="addToBasket(productdata)">
-                    加入購物車
-                  </v-btn>
-                </v-col>
+              </v-col>
+              <v-col cols="12" sm="6" md="4" class="d-flex justify-center pl-0 pr-sm-10 pt-4" >
+                <v-btn class="ma-2  cart-btn" outlined color="#657b6c" @click="addToBasket(productdata)">
+                  加入購物車
+                </v-btn>
               </v-col>
             </v-row>
             <!-- 下排按鈕 -->
