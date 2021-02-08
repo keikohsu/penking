@@ -1,26 +1,7 @@
-# front [demo](https://keikohsu.github.io/penking/)
+# 筆王店商平台
+#### 1.可以提供消費者選購文具，放入購物車結帳
+#### 2.可註冊會員、訪客留言
+#### 3.無會員也可購買
+#### 4.有後台功能可以管理商品上架、留言、會員管理、訂單管理
 
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
-
-[demo](https://keikohsu.github.io/penking/)
+[網站 demo](https://keikohsu.github.io/penking/)
