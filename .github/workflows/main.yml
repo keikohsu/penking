@@ -1,10 +1,10 @@
       # 步驟二：編譯
-      - name: Install and Build
+      - name: Install and Start
         run: |
           npm install
-          npm run build
+          npm run start
           yarn install
-          yarn build
+          yarn start
         env:
           VUE_APP_API: ${{ secrets.VUE_APP_API }}
       # 步驟三：部署
