@@ -2,7 +2,7 @@
       - name: Install and Start
         run: |
           npm install
-          npm run start
+          npm start
           yarn install
           yarn start
         env:
